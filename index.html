@@ -2,9 +2,9 @@
 </<!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
-    <link rel="stylesheet" href="./css/suface.css">
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>TOXIN</title>
   </head>
   <body>
     <header>
@@ -14,10 +14,18 @@
       </section>
       <section class="nav">
         <div>О нас</div>
-        <div>Услуги</div>
+        <select class="Favour" name="Услуги">
+          <option value="Медобслуживание"></option>
+          <option value="Экскурсии"></option>
+          <option value="Гид"></option>
+          <option value="Переводчик"></option>
+        </select>
         <div>Вакансии</div>
         <div>Новости</div>
-        <div>Соглашения</div>
+        <select class="" name="Соглашения">
+          <option value="Конфиденциальность"></option>
+          <option value="Какое-то соглашение"></option>
+        </select>
       </section>
       <section class="reg">
         <div>Войти</div>
@@ -25,12 +33,13 @@
       </section>
     </header>
     <main>
-      <article class="choose">
-        <select name="" id=""></select>
-        <select name="" id=""></select>
-        <select name="" id=""></select>
-        <div class="submit"></div>
-      </article>
+      <form action="choose.php" id="choose">
+        <p>Найдём номера под ваши пожелания</p>
+        <input type="date" name="ДД.ММ.ГГГГ" id="">
+        <input type="date" name="ДД.ММ.ГГГГ" id="">
+        <input type="number" name="Укажите число гостей" min="1" max="6" step="1" value="1" id="">
+        <input class="button" type="submit" name="ПОДОБРАТЬ НОМЕР">
+      </form>
     </main>
     <article class="underfoot">
       <section></section>
@@ -48,4 +57,4 @@
       </section>
     </footer>
   </body>
-</html>>
+</html>
